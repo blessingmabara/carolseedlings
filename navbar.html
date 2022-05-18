@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+       <section class="header">
+        <nav>
+            <a href="index.html"><img src="background/d.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Order</a></li>
+                </ul>
+            </div>
+       <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>WELCOME TO CAROL' S SEEDLINGS</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus odit temporibus dicta odio maiores magnam, doloribus <br> modi pariatur nisi nemo vero voluptates eligendi error aliquam dolorem beatae facere? Debitis, libero.</p>
+            <a href="" class="hero-btn">Get Started</a> 
+        </div>
+       </section>
+
+       
+       <script>
+           var navLinks = document.getElementById("navLinks");
+
+           function showMenu(){
+               navLinks.style.right = "0";
+           }
+           function hideMenu(){
+               navLinks.style.right = "-200px";
+           }
+       </script>
+</body>
+</html>
